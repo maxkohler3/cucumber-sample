@@ -33,5 +33,5 @@ steps:
               'requiresDecode' = 'true'
               'result' = $payload
             }
-      [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::tls12
+      [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
       Invoke-RestMethod -Body $body -Method 'Post' -Uri $url
